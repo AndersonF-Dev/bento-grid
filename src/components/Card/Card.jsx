@@ -1,5 +1,7 @@
 import React from 'react';
-import { GridContainer, GridItem1, GridItem2, GridItem3, GridItem4, GridItem5, GridItem6, GridItem7, GridItem8, ConteinerWrapper } from "./styles";
+import { GoStarFill } from "react-icons/go";
+
+import { GridContainer, GridItem1, GridItem2, GridItem3, GridItem4, GridItem5, GridItem6, GridItem7, GridItem8, ConteinerWrapper, GridItem2Title, StarIcon, GridItem1Text, GridItem4Titli, GridItem3Title, GridItem3Paragraph, GridItem5Paragraph } from "./styles";
 
 const ContentScheduler = () => {
   
@@ -8,24 +10,50 @@ const ContentScheduler = () => {
     <ConteinerWrapper>
     <GridContainer>
       <GridItem1>
-        Item 1
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, repellat nihil? Deserunt saepe cumque temporibus, exercitationem qui ab quisquam animi dolor praesentium doloribus repellendus sunt minima ut, libero quibusdam quis?
+      <GridItem1Text>
+        Create and schedule content <span>quicker.</span>
+        </GridItem1Text>
+      <img src="/images/illustration-create-post.webp" alt="Descrição da imagem" />
+      </GridItem1>
+      <GridItem2>
+        <GridItem2Title>
+          Social Media <span>10x</span> Faster with AI
+          
+        </GridItem2Title>
+        <StarIcon>
+        <GoStarFill color="hsl(39, 100%, 71%)" size={35}/>
+        <GoStarFill color="hsl(39, 100%, 71%)" size={35}/>
+        <GoStarFill color="hsl(39, 100%, 71%)" size={35}/>
+        <GoStarFill color="hsl(39, 100%, 71%)" size={35}/>
+        <GoStarFill color="hsl(39, 100%, 71%)" size={35}/>
+        </StarIcon>
 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, repellendus pariatur aliquam libero neque praesentium delectus quo recusandae expedita minima atque beatae suscipit doloremque vel laborum, deserunt est voluptatibus eum?
-        </p>
-        </GridItem1>
-      <GridItem2>Item 2</GridItem2>
-      <GridItem3>Item 3</GridItem3>
+        Over 4,000 5-star reviews
+      </GridItem2>
+      <GridItem3>
+        
+        <GridItem3Title>
+          Schedule to social media. 
+        </GridItem3Title> 
+        <img src="/images/illustration-schedule-posts.webp" alt="illustration-schedule-posts" />
+        <GridItem3Paragraph>
+        Optimize post timings to publish content at the perfect time for your audience.
+        </GridItem3Paragraph>
+      </GridItem3>
       <GridItem4>
-        Item 4
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, repellat nihil? Deserunt saepe cumque temporibus, exercitationem qui ab quisquam animi dolor praesentium doloribus repellendus sunt minima ut, libero quibusdam quis?
+      <GridItem4Titli>
+        Write your content using AI.
+      </GridItem4Titli>
+      <img src="/images/illustration-ai-content.webp" alt="illustration-ai-content" />
+      </GridItem4>
+       
+      <GridItem5>
+        <img src="/images/illustration-multiple-platforms.webp" alt="illustration-multiple-platforms" />
+        <GridItem5Paragraph>
+          Manage multiple accounts and platforms.
+        </GridItem5Paragraph>
+      </GridItem5>
 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, repellendus pariatur aliquam libero neque praesentium delectus quo recusandae expedita minima atque beatae suscipit doloremque vel laborum, deserunt est voluptatibus eum?
-        </p>
-        </GridItem4>
-      <GridItem5>Item 5</GridItem5>
       <GridItem6>Item 6</GridItem6>
       <GridItem7>Item 7</GridItem7>
       <GridItem8>Item 8</GridItem8>
