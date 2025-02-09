@@ -1,7 +1,7 @@
 import React from 'react';
 import { GoStarFill } from "react-icons/go";
 
-import { GridContainer, GridItem1, GridItem2, GridItem3, GridItem4, GridItem5, GridItem6, GridItem7, GridItem8, ConteinerWrapper, GridItem2Title, StarIcon, GridItem1Text, GridItem4Titli, GridItem3Title, GridItem3Paragraph, GridItem5Paragraph } from "./styles";
+import { GridContainer, GridItem1, GridItem2, GridItem3, GridItem4, GridItem5, GridItem6, GridItem7, GridItem8, ConteinerWrapper, GridItem2Title, StarIcon, GridItem1Text, GridItem4Titli, GridItem3Title, GridItem3Paragraph, GridItem5Paragraph, GridItem5Paragraph7, GridItem6Paragraph } from "./styles";
 
 const ContentScheduler = () => {
   
@@ -54,9 +54,25 @@ const ContentScheduler = () => {
         </GridItem5Paragraph>
       </GridItem5>
 
-      <GridItem6>Item 6</GridItem6>
-      <GridItem7>Item 7</GridItem7>
-      <GridItem8>Item 8</GridItem8>
+      <GridItem6>
+        <GridItem6Paragraph>
+          Maintain a consistent posting schedule.
+        </GridItem6Paragraph>
+        <img src="/images/illustration-consistent-schedule.webp" alt="illustration-consistent-schedule" />
+      </GridItem6>
+
+      <GridItem7>
+      <GridItem5Paragraph7>
+        <span>&gt;56% </span>
+        faster audience growth
+      </GridItem5Paragraph7>
+      <img src="/images/illustration-audience-growth.webp" alt="illustration-audience-growth" />
+      </GridItem7>
+
+      <GridItem8>
+      <img src="/images/illustration-grow-followers.webp" alt="illustration-grow-followers" />
+      <p>Grow followers with non-stop content.</p>
+      </GridItem8>
     </GridContainer>
     </ConteinerWrapper>
 
