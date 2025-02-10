@@ -54,8 +54,9 @@ export const GridContainer = styled.div`
 
   @media (max-width: 850px){
     background-color: aqua;
+
     grid-template-columns: auto;
-    max-width: 68%;
+    max-width: 95%;
     padding: 5px;
     
   }
@@ -138,20 +139,48 @@ export const GridItem1 = styled.div`
     @media (max-width: 850px){
         grid-column: 1;
         grid-row: 7;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
 
-        min-width: 33.75rem;
+        
+
+        min-width: 31.77rem;
+        height: 300px;
+
+        img{
+            width: 35%;
+            margin-left: 2rem;
+        }
     }
+
+    @media (max-width: 425px) {
+        background-color:rgb(30, 31, 30);
+        min-width: 23.994rem;
+
+
+        
+    }
+   
     
 `;
 
 export const GridItem1Text = styled.h2`
-    max-width: 178px;
+    width: 178px;
     font-size: 2.1rem;
     text-align: left;
     line-height: 1;
     
     span{
         color: hsl(256, 67%, 59%);
+    }
+
+    @media (max-width: 850px){
+        width: 430px;
+
+        font-size: 2rem;
+        margin-left: 2rem;
+        
     }
 `;
 
@@ -175,7 +204,24 @@ export const GridItem2 = styled.div`
         grid-column: 1; 
         grid-row: 1;
 
-        max-width: 100%;
+        max-width: 87%;
+        /* background-color:rgb(206, 23, 23); */
+    }
+
+    @media (max-width: 768px){
+
+    }
+
+    @media (max-width: 650px){
+        /* background-color:rgb(206, 23, 23); */
+        max-width: 62%;
+        line-height: 1;
+    }
+
+    @media (max-width: 425px) {
+        background-color:rgb(83, 216, 176);
+
+        max-width: 64%;
     }
     
 `;
@@ -189,6 +235,14 @@ export const GridItem2Title = styled.p`
 
     span{
         color: hsl(39, 100%, 71%);
+    }
+
+    @media (max-width: 650px){
+        font-size: 3.1rem;
+    }
+
+    @media (max-width: 425px) {
+        font-size: 3.5rem;
     }
 
 `;
@@ -226,12 +280,18 @@ export const GridItem3 = styled.div`
         align-Items: center;
         justify-content: center;
 
-        min-width: 33.75rem;
+        min-width: 31.89rem;
 
         img{
             min-width: 75%;
             margin-left: 1rem;
         }
+    }
+
+    @media (max-width: 425px) {
+        background-color:rgb(83, 216, 176);
+
+        min-width: 23.994rem;
     }
 `;
 
@@ -290,7 +350,27 @@ export const GridItem4 = styled.div`
         grid-column: 1;
         grid-row: 8;
 
-        min-width: 33.75rem;
+        display: flex;
+        flex-direction: column;
+        margin-top: .2rem;
+
+        min-width: 31.93rem;
+
+        img{
+            width: 52%;
+            margin-left: 1.5rem;
+        }
+    }
+
+    @media (max-width: 425px) {
+        background-color:rgb(83, 216, 176);
+
+        min-width: 23.99rem;
+        margin-top: .5rem;
+
+        img{
+            width: 62%;
+        }
     }
 `;
 
@@ -301,6 +381,13 @@ export const GridItem4Titli = styled.h2`
     line-height: 1;
     margin: 1.5rem 0 2.5rem 1.3rem;
     /* margin-bottom: 2.5rem; */
+
+    @media (max-width: 850px){
+        /* background-color: #ffffff; */
+        max-width: 388px;
+        font-size: 2.3rem;
+        margin-left: 1.5rem;
+    }
 `;
 
 export const GridItem5 = styled.div`
@@ -322,16 +409,33 @@ export const GridItem5 = styled.div`
         grid-column: 1;
         grid-row: 2;
 
-        min-width: 33.75rem;
+        min-width: 31.93rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 1rem;
 
+        
+
         img{
-            min-width: 100%;
+            min-width: 95%;
             margin: 0;
+        }
+    }
+
+    @media (max-width: 768px){
+        min-width: 31.90rem;
+        background-color:rgb(181, 216, 83);
+    }
+
+    @media (max-width: 425px) {
+        background-color:rgb(83, 216, 176);
+
+        min-width: 23.994rem;
+
+        img{
+            min-width: 85%;
         }
     }
 `;
@@ -351,6 +455,19 @@ export const GridItem5Paragraph = styled.p`
         margin: 0;
         font-size: 2.797rem;
     }
+
+    @media (max-width: 768px){
+        font-size: 2.482rem;
+        margin-left: 1.4rem;
+    }
+
+    @media (max-width: 425px) {
+        background-color:rgb(83, 216, 176);
+        font-size: 1.782rem;
+        
+    }
+
+    
 `;
 
 export const GridItem6 = styled.div`
@@ -374,9 +491,9 @@ export const GridItem6 = styled.div`
         grid-column: 1;
         grid-row: 3;
 
-       margin: 0 auto;
+       /* margin: 0 auto; */
 
-        min-width: 33.75rem;
+        min-width: 31.85rem;
         min-height: 239px;
 
         img{
@@ -384,6 +501,17 @@ export const GridItem6 = styled.div`
             
             margin: -20px 0 0 -45%;
         }
+    }
+
+    @media (max-width: 425px) {
+        background-color:rgb(83, 216, 176);
+        min-width: 23.994rem;
+
+
+        img{
+            margin: -15px 0 0 -25%;
+        }
+        
     }
     
 `;
@@ -402,6 +530,15 @@ export const GridItem6Paragraph = styled.p`
         
         min-width: 61%;
         font-size: 1.7rem;
+        
+    }
+
+    @media (max-width: 425px) {
+        background-color:rgb(134, 83, 216);
+        min-width: 81%;
+        font-size: 1.5rem;
+
+
         
     }
 `;
@@ -428,14 +565,29 @@ export const GridItem7 = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: start;
 
-        min-width: 33.75rem;
+        min-width: 31.95rem;
 
         img{
             width: 200px;
-            margin-left: 0;
+            margin-left: 1rem;
         }
+    }
+
+    @media (max-width: 425px) {
+        background-color:rgb(216, 83, 156);
+        min-width: 23.994rem;
+        overflow: hidden;
+
+        align-items: start;
+        
+
+        img{
+            margin-left: 1rem;
+        }
+       
+        
     }
     
     
@@ -456,7 +608,17 @@ export const GridItem5Paragraph7 = styled.p`
     }
 
     @media (max-width: 850px){
-        margin-left: -15px;
+        margin-left: 1rem;
+    }
+
+    @media (max-width: 425px) {
+        background-color:rgb(83, 216, 176);
+        min-width: 23.994rem;
+
+        margin-left: 1rem;
+
+
+        
     }
 `;
 
@@ -490,8 +652,9 @@ export const GridItem8 = styled.div`
         display: flex;
         flex-direction: column;
 
-        min-width: 33.75rem;
+        max-width: 31.94rem;
         height: 23.188rem;
+        /* background-color:rgb(83, 216, 176); */
 
         img{
             margin-top: 1rem;
@@ -504,5 +667,14 @@ export const GridItem8 = styled.div`
             
             margin-top: 1rem;
         }
+
+        @media (max-width: 425px) {
+        background-color:rgb(216, 83, 83);
+        max-width: 23.994rem;
+
+
+       
+        
+    }
     }
 `;
