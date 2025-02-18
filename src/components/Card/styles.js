@@ -119,6 +119,10 @@ export const GridCreatePost = styled.div`
         }
     }
 
+    @media (max-width: 481px){
+        min-width: 24.7rem;
+    }
+
     @media (max-width: 430px) {
         min-width: 23.14rem;
         min-height: 10rem;
@@ -467,6 +471,14 @@ export const GridAiContent = styled.div`
         }
     }
 
+    @media (max-width: 481px){
+        min-width: 24.7rem;
+
+        img{
+            width: 75%;
+        }
+    }
+
     @media (max-width: 430px) {
         min-width: 23.14rem;
         margin-top: .1rem;
@@ -496,6 +508,7 @@ export const AiContentTitle = styled.h2`
     text-align: left;
     line-height: 1;
     margin: 1.5rem 0 2.5rem 1.3rem;
+    background-color: aquamarine;
    
     @media (max-width: 1024px){
         font-size: 1.7rem; 
@@ -505,6 +518,11 @@ export const AiContentTitle = styled.h2`
         max-width: 388px;
         font-size: 2rem;
         margin-left: 1.5rem;
+    }
+
+    @media (max-width: 481px){
+        font-size: 1.9rem;
+        max-width: 328px;
     }
 
     @media (max-width: 330px){
@@ -761,6 +779,10 @@ export const GridAudienceGrowth = styled.div`
         }
     }
 
+    @media (max-width: 481px){
+        min-width: 24.7rem;
+    }
+
     @media (max-width: 430px) {
        min-width: 23.14rem;
         height: 213px;
@@ -883,7 +905,7 @@ export const GridGrowFollowers = styled.div`
     }
 
     @media (max-width: 481px){
-        min-width: 22.7rem;
+        max-width: 24.7rem;
     }
 
     @media (max-width: 430px){
