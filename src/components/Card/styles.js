@@ -6,129 +6,87 @@ export const ConteinerWrapper = styled.main`
     justify-content: center;
     overflow: hidden;
     
-`;
+    width: 95%; 
 
-export const FastContentScheduler = styled.section`
-    background-color: hsl(33, 50.40%, 55.70%);
-    width: 257px;
-    height: 412px;
-`;
+    
+    @media (max-width: 610px){
+        width: 71%; 
+        background-color: orange;
+    }
 
-export const FastContentScheduler2 = styled.section`
-    background-color: hsl(36, 4.00%, 24.50%);
-    width: 257px;
-    height: 412px;
-`;
+    @media (max-width: 481px){
+        width: 92%; 
+        background-color: greenyellow;
+    }
 
-export const AiBoosted = styled.section`
-    background-color: hsl(256, 67%, 59%);
-    width: 545px;
-    height: 323px;
-`;
+    @media (max-width: 430px){
+        width: 92%; 
+        background-color: brown;
+    }
 
-export const ChedulerSocial = styled.section`
-    background-color: hsl(254, 88%, 90%);
-    width: 257px;
-    height: 603px;
-`;
+    @media (max-width: 379px){
+        width: 88%; 
+        background-color: cornflowerblue;
+    }
 
+    @media (max-width: 372px){
+        width: 92%; 
+        background-color: burlywood;
+    }
+`;
 
 // Container com Grid usando grid-template-areas
+
 export const GridContainer = styled.div`
   display: grid;
-  /* grid-template-areas:
-    "item1 item2 item2 item3"
-    "item1 item2 item2 item3"
-    "item4 item5 item6 item3"
-    "item4 item7 item8 item8"; */
-  /* grid-template-columns: 257px 545px 257px;  */
   grid-template-columns: auto auto auto auto;
-  /* grid-template-rows: repeat(4, 1fr);  */
-  max-width: 81%;
-  /* width: 1123px; */
-  grid-gap: 8px; /* Espaçamento entre os itens */
-  overflow: hidden;
+  /* background-color: aqua; */
+  max-width: 82%;
   
-  /* padding: 20px; */
-  /* background-color:rgb(194, 233, 20); */
+  grid-gap: 8px;
+  overflow: hidden;
+  /* background-color: black; */
+  @media (max-width: 1359px){
+        max-width: 100%; 
+       
+    }
+
+  @media (max-width: 1024px){
+    max-width: 100%;
+  }
 
   @media (max-width: 850px){
-    background-color: aqua;
-
     grid-template-columns: auto;
     max-width: 95%;
     padding: 5px;
     
   }
+
+  @media (max-width: 452px){
+    max-width: 100%;
+  }
+
+  @media (max-width: 320px){
+
+  }
 `;
 
 // Estilo para os Itens
-// export const GridItem = styled.div`
-//   background-color: #007bff;
-//   color: white;
-//   padding: 20px;
-//   text-align: center;
-//   border-radius: 8px;
 
-//   /* Posicionando os itens no grid */
-//   &:nth-child(1) {
-//     grid-area: item1;
-//     height: 412px;
-//   }
-
-//   &:nth-child(2) {
-//     grid-area: item2;
-//     height: 323px;
-//   }
-
-//   &:nth-child(3) {
-//     grid-area: item3;
-//     height: 603px;
-//   }
-
-//   &:nth-child(4) {
-//     grid-area: item4;
-//     height: 412px;
-//   }
-
-//   &:nth-child(5) {
-//     grid-area: item5;
-//     width: 259px;
-//     height: 253px;
-//   }
-
-//   &:nth-child(6) {
-//     grid-area: item6;
-//     width: 259px;
-//     height: 253px;
-//   }
-
-//   &:nth-child(7) {
-//     grid-area: item7;
-//     width: 259px;
-//     height: 253px;
-//   }
-
-//   &:nth-child(8) {
-//     grid-area: item8;
-//     width: 543px;
-//     height: 253px;
-//   }
-// `;
-
-export const GridItem1 = styled.div`
-    /* grid-area: item1; */
+// Estilos do componente GridCreatePost
+export const GridCreatePost = styled.div`
     grid-row: 1 / 3;
     grid-column: 1;
-    /* grid-column: span 2; */
-    /* grid-row: 1 / 3; */
-    width: 257px;
-    height: 430px;
+
+    max-width: 16.063rem;
+    max-height: 26.875rem;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: hsl(31, 66%, 93%);
+
     overflow: hidden;
     border-radius: .5rem; 
 
@@ -136,14 +94,21 @@ export const GridItem1 = styled.div`
         width: 80%;
     }
 
+    @media (max-width: 1024px){
+        max-width: 13rem;
+
+        img {
+            width: 70%;
+        }
+    }
+
     @media (max-width: 850px){
         grid-column: 1;
         grid-row: 7;
+
         display: flex;
         flex-direction: column;
         align-items: start;
-
-        
 
         min-width: 31.77rem;
         height: 300px;
@@ -154,25 +119,36 @@ export const GridItem1 = styled.div`
         }
     }
 
-    @media (max-width: 425px) {
-        background-color:rgb(30, 31, 30);
-        min-width: 23.994rem;
-
-
+    @media (max-width: 430px) {
+        min-width: 23.14rem;
+        min-height: 10rem;
         
+        img{
+            width:50%;
+        }
     }
-   
-    
+
+    @media (max-width: 395px){
+        min-width: 19rem;
+        
+        img{
+            width: 50%;
+        }
+    }
 `;
 
-export const GridItem1Text = styled.h2`
+export const CreatePostTitle = styled.h2`
     width: 178px;
+
     font-size: 2.1rem;
     text-align: left;
     line-height: 1;
     
     span{
         color: hsl(256, 67%, 59%);
+    }
+    @media (max-width: 1024px){
+        font-size: 1.8rem;
     }
 
     @media (max-width: 850px){
@@ -182,16 +158,30 @@ export const GridItem1Text = styled.h2`
         margin-left: 2rem;
         
     }
+
+    @media (max-width: 425px) {
+        width: 250px;
+        font-size: 1.3rem;
+    }
+
+    @media (max-width: 395px){
+        width: 230px;
+        font-size: 1.3rem;
+    }
 `;
 
-export const GridItem2 = styled.div`
+// Estilos do componente GridSocialMedia
+export const GridSocialMedia = styled.div`
     grid-column: 2 / 4; 
     grid-row: 1;
-    width: 500px;
+
+    width: 490px;
     height: 323px;
     background-color: hsl(256, 67%, 59%);
+    
     border-radius: .5rem; 
     padding: 20px;
+    
     color: white;
     font-size: 1.5rem;
 
@@ -199,13 +189,21 @@ export const GridItem2 = styled.div`
     flex-direction: column;
     align-Items: center;
     justify-content: center;
+
+    p{
+        margin-top: .1rem;
+    }
+
+    @media (max-width: 1024px){
+        /* max-width: 400px; */
+    }
     
     @media (max-width: 850px){
         grid-column: 1; 
         grid-row: 1;
 
-        max-width: 87%;
-        /* background-color:rgb(206, 23, 23); */
+        max-width: 89%;
+       
     }
 
     @media (max-width: 768px){
@@ -218,20 +216,42 @@ export const GridItem2 = styled.div`
         line-height: 1;
     }
 
-    @media (max-width: 425px) {
-        background-color:rgb(83, 216, 176);
+    @media (max-width: 481px) {
+        max-width: 67%;
+        height: 290px;
+        /* margin-left: .5rem; */
 
-        max-width: 64%;
+        p{
+          font-size: 1.3rem;
+        }
+
     }
-    
-`;
 
-export const GridItem2Title = styled.p`
-    max-width: 454px;
-    font-size: 3.9rem;
+    @media (max-width: 430px) {
+        max-width: 62%;
+        height: 270px;
+        /* margin-left: .5rem; */
+
+        p{
+          font-size: 1.3rem;
+        }
+
+    }
+
+    @media (max-width: 395px){
+        max-width: 50%;
+        height: 223px;
+        /* margin-left: .8rem; */
+        p{
+          font-size: 1rem;  
+        }
+    }
+`;
+export const SocialMediaTitle = styled.h2`
+    max-width: 360px;
+    font-size: 1.7rem;
     font-weight: 500;
-    /* background-color:rgb(206, 23, 23); */
-    margin-top: -10px;
+    margin-top: 10px;
 
     span{
         color: hsl(39, 100%, 71%);
@@ -241,34 +261,68 @@ export const GridItem2Title = styled.p`
         font-size: 3.1rem;
     }
 
-    @media (max-width: 425px) {
-        font-size: 3.5rem;
+    @media (max-width: 481px){
+        font-size: 1.7rem;
     }
 
+    @media (max-width: 430px) {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    @media (max-width: 395px){
+        font-size: 1.3rem;
+        margin-bottom: 2.5rem;
+    }
+
+        
+
 `;
-export const StarIcon = styled.div`
+export const SocialMediaStarIcon = styled.div`
     display: flex;
     gap: 1rem;
-    /* background-color:rgb(29, 224, 104); */
-    margin-top: -40px;
+    margin-top: -2rem;
+    
+    
+    svg{
+        width: 30px;
+        height: 30px;
+    }
+    
+    @media (max-width: 425px) {
+        svg{
+        width: 23px;
+        height: 23px;
+    }
+    }
+    @media (max-width: 320px) {
+        svg{
+        width: 20px;
+        height: 20px;
+    }
+}
 `;
 
-export const GridItem3 = styled.div`
-    /* grid-area: item3; */
+// Estilos do componente GridSchedulePosts
+export const GridSchedulePosts = styled.div`
     grid-column: 4; 
     grid-row: 1 / 3; 
+
     overflow: hidden;
-    max-width: 259px;
-    /* height: 603px; */
+    max-width: 14.5rem;
+    
     background-color:hsl(254, 88%, 90%);
     border-radius: .5rem; 
-    /* display: flex;
-    flex-direction: column; */
+    
 
     img{
         width: 326px;
         height: 317px;
         margin-left: 30px;
+    }
+
+    @media (max-width: 1024px){
+        width: 234px;
     }
 
     @media (max-width: 850px){
@@ -288,14 +342,33 @@ export const GridItem3 = styled.div`
         }
     }
 
-    @media (max-width: 425px) {
-        background-color:rgb(83, 216, 176);
+    @media (max-width: 481px){
+        min-width: 24.7rem;
+    }
 
-        min-width: 23.994rem;
+    @media (max-width: 430px) {
+        min-width: 23.14rem;
+
+        img{
+        width: 276px;
+        height: 257px;
+        margin-left: 0;
+        }
+    }
+
+    @media (max-width: 395px) {
+        min-width: 19rem;
+        
+
+        img{
+        width: 256px;
+        height: 257px;
+        margin-left: 0;
+        }
     }
 `;
 
-export const GridItem3Title = styled.h2`
+export const SchedulePostsTitle = styled.h2`
     max-width: 178px;
     /* background-color: #ffffff; */
     text-align: left;
@@ -303,18 +376,32 @@ export const GridItem3Title = styled.h2`
 
     @media (max-width: 850px){
         min-width: 75%;
+        
         font-size: 1.8rem;
-        margin: 3rem 0 1rem 0;
         text-align: center;
+        
+        margin: 3rem 0 1rem 0;
+    }
+
+    @media (max-width: 485px) {
+        max-width: 270px;
+        font-size: 1.3rem;
+    }
+
+    @media (max-width: 320px) {
+        max-width: 250px;
+        font-size: 1.2rem;
     }
 `;
 
-export const GridItem3Paragraph = styled.p`
+export const SchedulePostsParagraph = styled.p`
     max-width: 187px;
-    text-align: left;
-    line-height: 1;
     max-width: 177px;
     height: 83px;
+
+    text-align: left;
+    line-height: 1;
+
     margin: 1rem 0 2rem 2rem;
     /* background-color: #ffffff; */
 
@@ -326,24 +413,42 @@ export const GridItem3Paragraph = styled.p`
         text-align: center;
         font-size: 1.6rem;
     }
+
+    @media (max-width: 485px){
+        max-width: 270px;
+        font-size: 1rem;
+        margin: 1rem 0 0 0;
+    }
+
+    @media (max-width: 320px) {
+        max-width: 250px;
+        font-size: 1rem;
+        /* margin-top: 1rem; */
+        margin: 1rem 0 0 0;
+        
+    }
 `;
 
-export const GridItem4 = styled.div`
-    /* grid-area: item4; */
+// Estilos do componente GridAiContent
+export const GridAiContent = styled.div`
     grid-column: 1;
     grid-row: 2 / 5;
+
     width: 257px;
-    height: 436px;
-    border-radius: .5rem;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
+    height: 440px;
     background-color: hsl(39, 100%, 71%);
+    
+    border-radius: .5rem;
     margin-top: 4.5rem;
     overflow: hidden;
 
     img{
         width: 82%;
+    }
+
+    @media (max-width: 1024px){
+        max-width: 13rem;
+        
     }
 
     @media (max-width: 850px){
@@ -362,40 +467,57 @@ export const GridItem4 = styled.div`
         }
     }
 
-    @media (max-width: 425px) {
-        background-color:rgb(83, 216, 176);
+    @media (max-width: 430px) {
+        min-width: 23.14rem;
+        margin-top: .1rem;
 
-        min-width: 23.99rem;
-        margin-top: .5rem;
+
 
         img{
-            width: 62%;
+            width: 72%;
         }
+    }
+
+    @media (max-width: 395px) {
+        
+        min-width: 19rem;
+        height: 355px;
+
+        img{
+        width: 72%;
+    }
+
     }
 `;
 
-export const GridItem4Titli = styled.h2`
+export const AiContentTitle = styled.h2`
     max-width: 158px;
     font-size: 2rem;
     text-align: left;
     line-height: 1;
     margin: 1.5rem 0 2.5rem 1.3rem;
-    /* margin-bottom: 2.5rem; */
+   
+    @media (max-width: 1024px){
+        font-size: 1.7rem; 
+    }
 
     @media (max-width: 850px){
-        /* background-color: #ffffff; */
         max-width: 388px;
-        font-size: 2.3rem;
+        font-size: 2rem;
         margin-left: 1.5rem;
+    }
+
+    @media (max-width: 330px){
+        font-size: 1.4rem;
+        max-width: 228px;
     }
 `;
 
-export const GridItem5 = styled.div`
-    /* grid-area: item5; */
-    
+// Estilos do componente GridMultiplePlatforms
+export const GridMultiplePlatforms = styled.div`
     grid-row: 2;
-    width: 259px;
-    height: 253px;
+    width: 16.188rem;
+    height: 15.813rem;
     background-color:hsl(0, 0%, 100%);
     border-radius: .5rem;
     overflow: hidden;
@@ -403,6 +525,10 @@ export const GridItem5 = styled.div`
     img{
         max-width: 338px;
         margin: 1.1rem 0 0 1.1rem;
+    }
+
+    @media (max-width: 1024px){
+        /* max-width: 12.5rem; */
     }
 
     @media (max-width: 850px){
@@ -426,21 +552,36 @@ export const GridItem5 = styled.div`
 
     @media (max-width: 768px){
         min-width: 31.90rem;
-        background-color:rgb(181, 216, 83);
+        
     }
 
-    @media (max-width: 425px) {
-        background-color:rgb(83, 216, 176);
+    @media (max-width: 481px){
+        min-width: 24.7rem;
+        height: 10.55rem;
+    }
 
-        min-width: 23.994rem;
+    @media (max-width: 430px) {
+        min-width: 23.14rem;
+        height: 10.25rem;
 
         img{
-            min-width: 85%;
+            min-width: 30%;
+        }
+    }
+
+    @media (max-width: 395px) {
+        min-width: 19rem;
+        height: 8.25rem;
+        
+
+        img{
+            max-width: 258px;
+            
         }
     }
 `;
 
-export const GridItem5Paragraph = styled.p`
+export const MultiplePlatformsParagraph = styled.p`
     font-size: 1.497rem;
     font-weight: 500;
     max-width: 186px;
@@ -448,7 +589,7 @@ export const GridItem5Paragraph = styled.p`
     text-align: left;
     line-height: 1;
     margin-left: 1.4rem;
-    /* background-color:rgb(83, 216, 176); */
+    background-color:rgb(83, 216, 176);
 
     @media (max-width: 850px){
         min-width: 95%;
@@ -460,22 +601,29 @@ export const GridItem5Paragraph = styled.p`
         font-size: 2.482rem;
         margin-left: 1.4rem;
     }
+    @media (max-width: 481px) {
+        font-size: 1.7rem;
+    }
 
-    @media (max-width: 425px) {
-        background-color:rgb(83, 216, 176);
-        font-size: 1.782rem;
+    @media (max-width: 430px) {
+        min-width: 80%; 
+        font-size: 1.3rem;
+        margin-left: 0;
         
+    }
+
+    @media (max-width: 395px) {
+        font-size: 1.2rem;
     }
 
     
 `;
 
-export const GridItem6 = styled.div`
-    /* grid-area: item6; */
-    /* grid-column: 2; */
-    grid-row: 2; /* Linha 1 com altura de 412px */
+// Estilos do componente GridConsistentSchedule
+export const GridConsistentSchedule = styled.div`
+    grid-row: 2; 
     width: 259px;
-    height: 253px;
+    max-height: 253px;
     font-weight: 500;
     overflow: hidden;
     background-color:hsl(39, 100%, 71%);
@@ -487,11 +635,20 @@ export const GridItem6 = styled.div`
         margin: .9rem 0 0 .1rem;
     }
 
+    @media (max-width: 1024px){
+        /* max-width: 12.5rem; */
+
+
+        img{
+            min-width: 100px;
+            min-height: 100px; 
+            
+        }
+    }
+
     @media (max-width: 850px){
         grid-column: 1;
         grid-row: 3;
-
-       /* margin: 0 auto; */
 
         min-width: 31.85rem;
         min-height: 239px;
@@ -503,28 +660,52 @@ export const GridItem6 = styled.div`
         }
     }
 
-    @media (max-width: 425px) {
-        background-color:rgb(83, 216, 176);
-        min-width: 23.994rem;
+    @media (max-width: 481px){
+        min-width: 24.7rem;
+        max-height: 11rem;
+
+        img{
+            min-width: 100px;
+            margin: 5px 0 0 -34%;
+        }
+    }
+
+    @media (max-width: 430px) {
+        
+        min-width: 23.14rem;
+        max-height: 11rem;
 
 
         img{
-            margin: -15px 0 0 -25%;
+            min-width: 100px;
+            margin: 5px 0 0 -29%;
         }
         
+    }
+
+    @media (max-width: 395px) {
+        min-width: 19rem;
+        
+        img{
+            min-width: 100px;
+            min-height: 100px;
+            margin-left: -.7rem; 
+            margin-top: .3rem;
+        }
     }
     
 `;
 
-export const GridItem6Paragraph = styled.p`
+export const ConsistentScheduleParagraph = styled.p`
     font-size: 1.497rem;
     font-weight: 500;
-    max-width: 186px;
-    /* height: 116px; */
     text-align: left;
     line-height: 1;
+    
+    max-width: 186px;
     margin-left: 1.4rem;
-    /* background-color:rgb(83, 216, 176); */
+
+    background-color: aqua;
 
     @media (max-width: 850px){
         
@@ -533,19 +714,24 @@ export const GridItem6Paragraph = styled.p`
         
     }
 
-    @media (max-width: 425px) {
-        background-color:rgb(134, 83, 216);
+    @media (max-width: 481px){
+        font-size: 1.4rem;
+    }
+
+    @media (max-width: 430px) {
         min-width: 81%;
-        font-size: 1.5rem;
-
-
-        
+        font-size: 1.4rem;
+    }
+    @media (max-width: 320px) {
+        margin-top: 1.7rem;
+        font-size: 1.3rem;
     }
 `;
 
-export const GridItem7 = styled.div`
-    /* grid-area: item7; */
-    grid-row: 3; /* Linha 1 com altura de 412px */
+// Estilos do componente GridAudienceGrowth
+
+export const GridAudienceGrowth = styled.div`
+    grid-row: 3; 
     width: 259px;
     height: 253px;
     background-color: hsl(0, 0%, 100%);
@@ -575,25 +761,31 @@ export const GridItem7 = styled.div`
         }
     }
 
-    @media (max-width: 425px) {
-        background-color:rgb(216, 83, 156);
-        min-width: 23.994rem;
-        overflow: hidden;
-
+    @media (max-width: 430px) {
+       min-width: 23.14rem;
+        height: 213px;
         align-items: start;
         
-
         img{
             margin-left: 1rem;
         }
+    }
+
+
+    @media (max-width: 395px) {
+        
+        min-width: 19rem;
+        height: 213px;
        
+
+        img{
+            width: 158px;
+        }
         
     }
-    
-    
 `;
 
-export const GridItem5Paragraph7 = styled.p`
+export const AudienceGrowthParagraph = styled.p`
     display: flex;
     flex-direction: column;
     font-weight: 500;
@@ -603,7 +795,7 @@ export const GridItem5Paragraph7 = styled.p`
 
 
     span{
-        font-size: 3.5rem;
+        font-size: 3rem;
         
     }
 
@@ -612,21 +804,27 @@ export const GridItem5Paragraph7 = styled.p`
     }
 
     @media (max-width: 425px) {
-        background-color:rgb(83, 216, 176);
-        min-width: 23.994rem;
+        min-width: 23.94rem;
 
         margin-left: 1rem;
+    }
 
+    @media (max-width: 320px) {
+        font-size: 1rem;
 
+        span{
+        font-size: 3.2rem;
         
+    }
     }
 `;
 
-export const GridItem8 = styled.div`
-    /* grid-area: item8; */
+// Estilos do componente GridGrowFollowers
+
+export const GridGrowFollowers = styled.div`
     grid-column: 3 / 5;
-    grid-row: 3; /* Linha 1 com altura de 412px */
-    max-width: 543px;
+    grid-row: 3;
+    width: 503px;
     height: 253px;
     display: flex;
     align-items: center;
@@ -635,14 +833,27 @@ export const GridItem8 = styled.div`
     border-radius: .5rem;
 
     color: hsl(0, 0%, 100%);
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-align: left;
     line-height: 1;
     
    img{
-        width: 229px;
+        width: 222px;
         height: 198px;
         margin-left: 1.2rem;
+    }
+
+    @media (max-width: 1024px){
+        max-width: 470px;
+        
+
+        img{
+            width: 210px;
+        }
+
+        p{
+            font-size: 1.7rem;
+        }
     }
 
     @media (max-width: 850px){
@@ -654,7 +865,7 @@ export const GridItem8 = styled.div`
 
         max-width: 31.94rem;
         height: 23.188rem;
-        /* background-color:rgb(83, 216, 176); */
+     
 
         img{
             margin-top: 1rem;
@@ -668,13 +879,21 @@ export const GridItem8 = styled.div`
             margin-top: 1rem;
         }
 
-        @media (max-width: 425px) {
-        background-color:rgb(216, 83, 83);
-        max-width: 23.994rem;
-
-
        
+    }
+
+    @media (max-width: 481px){
+        min-width: 22.7rem;
+    }
+
+    @media (max-width: 430px){
+        max-width: 23.14rem;
+    }
+
+    @media (max-width: 395px) {
+        max-width: 19rem;
+        
         
     }
-    }
+        
 `;
